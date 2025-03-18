@@ -2,12 +2,12 @@
 
 Elmiasangga Agna Resource Planner (EARP) offers a comprehensive suite of functionalities designed to streamline project management and optimize resource utilization. It supports complex task dependencies, including start-start, start-finish, finish-finish, and finish-start relationships, complete with lead and lag adjustments to ensure flexibility and precision in scheduling. The planner incorporates automatic scheduling that considers resource constraints, enabling seamless task allocation and timeline optimization. Additionally, its robust project dashboard provides visual tools like Gantt charts, resource profile plots, and more, offering teams clear insights into project progress and resource usage at a glance. Together, these features make EARP a powerful tool for managing projects with efficiency and accuracy. With EARP, one can:
 
-- [insert project](##Insert Project)
-- [manage users](##Users Management)
-- [manage subscriptions](##Subscriptions Management)
-- [access project dashboard](##Project Dashboard)
-- [access project workspace](##Project Workspace)
-- [manage tasks](##Tasks Management)
+- [insert project](#Insert Project)
+- [manage users](#Users Management)
+- [manage subscriptions](#Subscriptions Management)
+- [access project dashboard](#Project Dashboard)
+- [access project workspace](#Project Workspace)
+- [manage tasks](#Tasks Management)
 
 Users who sign up for an EARP account will be granted an administrator account. Only one person is required to register an organization. The administrator can then add additional members to the organization with various roles, including the administrator role. Each user can hold only one role at a time. The currently available roles in EARP are as follows:
 
@@ -99,3 +99,7 @@ To assign subscriptions, an administrator needs to enter the following informati
 - Name of the column containing the email of the user to be assigned a subscription.
 - Name of the column containing the subscription to be assigned to the user.
 - A CSV file containing information on subscription assignments with the specified column headers.
+
+## Project Dashboard
+
+The project dashboard is accessible to [administrator](#administrator), [leader](#leader), and [guest](#guest) users who have either the ProjectManagementSystem 30-days Plan, ProjectManagementSystem 365-days Plan, or the Trial Plan. The [administrator](#administrator) has the ability to assign a leader and guests to a project directly from the project dashboard.
