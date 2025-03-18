@@ -82,3 +82,20 @@ Only [administrators](#administrator) can manage users. To insert users, the fol
 - Name of the column containing the email of the user to be added.
 - Name of the column containing the role (admin, leader, member, guest) of the user to be added.
 - A CSV file containing information on users to be added with the specified column headers.
+
+To remove users, the following information is required:
+
+- Name of the column containing the email of the user to be removed.
+- A CSV file containing information on users to be added with the specified column headers.
+
+## Manage Subscriptions
+
+Only [administrators](#administrator) can manage subscriptions. The top table on the page displays the type and number of subscriptions that can be assigned.
+
+To purchase subscriptions, an administrator needs to enter the number of subscriptions next to the type they want to buy in the bottom table. After that, they can calculate the total price by pressing the CALCULATE TOTAL PRICE button. Please note that purchases are non-refundable. To continue with the purchase, the administrator should click the PAY button, which will direct them to a page showing the details of the transaction. If they wish to abort the purchase, they can press the RETURN TO HOME PAGE button. Otherwise, they can proceed by clicking the PayPal button and providing the necessary details for the purchase.
+
+To assign subscriptions, an administrator needs to enter the following information:
+
+- Name of the column containing the email of the user to be assigned a subscription.
+- Name of the column containing the subscription to be assigned to the user.
+- A CSV file containing information on subscription assignments with the specified column headers.
