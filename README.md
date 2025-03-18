@@ -36,7 +36,7 @@ Guests can access the project workspace and the dashboards for the projects they
 
 ## Insert Project
 
-Only [administrators](#administrator) can insert projects. To insert a project, the following information is required:
+Only [administrators](#administrator) with either the Project Management System 30-days Plan, Project Management System 365-days Plan, or the Trial Plan are permitted to insert projects. To insert a project, the following information is required:
 
 - **Weekends**
 - **Project Details:**
@@ -86,7 +86,7 @@ Only [administrators](#administrator) can manage users. To insert users, the fol
 To remove users, the following information is required:
 
 - Name of the column containing the email of the user to be removed.
-- A CSV file containing information on users to be added with the specified column headers.
+- A CSV file containing information on users to be removed with the specified column headers.
 
 ## Manage Subscriptions
 
@@ -106,4 +106,17 @@ The project dashboard is available to users with the roles of [administrator](#a
 
 ## Project Workspace
 
-The project workspace is accessible to users in any role as long as they are subscribed to one of the following plans: ProjectManagementSystem 30-days Plan, ProjectManagementSystem 365-days Plan, or the Trial Plan. Members designated as leaders for a task can update the task, while leaders have the ability to review any task within the projects they are assigned to. Guests and administrators can only monitor project progress, with guests limited to projects they are assigned to, whereas administrators have visibility into all projects.
+The project workspace is accessible to users in any role as long as they are subscribed to one of the following plans: ProjectManagementSystem 30-days Plan, ProjectManagementSystem 365-days Plan, or the Trial Plan. [Members](#member) designated as leaders for a task can update the task, while [leaders](#leader) of projects have the ability to review any task within the projects they are assigned to. [Guests](#guest) and [administrators](#administrator) can only monitor project progress, with guests limited to projects they are assigned to, whereas administrators have visibility into all projects.
+
+## Manage Tasks
+
+Only [leaders](#leader) with either the Project Management System 30-day Plan, Project Management System 365-day Plan, or the Trial Plan can manage tasks. To manage tasks, the following information is required:
+
+- Project name
+- Name of the column containing assignees' emails
+- Name of the column containing the task's name (which needs to be unique)
+- Name of the column containing task links
+- Name of the column containing the email of the leader for the assignees
+- Name of the column containing the status of the task
+- Name of the column containing the review result of the task
+- A CSV file containing information on assignments with the specified column headers
