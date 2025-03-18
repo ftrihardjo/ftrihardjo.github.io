@@ -1,18 +1,31 @@
 # Welcome to the documentation of [Elmiasangga Agna Resource Planner](https://elmiasangga-agna.com/), the ultimate project scheduling tool.
 
-Elmiasangga Agna Resource Planner offers a comprehensive suite of functionalities designed to streamline project management and optimize resource utilization. It supports complex task dependencies, including start-start, start-finish, finish-finish, and finish-start relationships, complete with lead and lag adjustments to ensure flexibility and precision in scheduling. The planner incorporates automatic scheduling that considers resource constraints, enabling seamless task allocation and timeline optimization. Additionally, its robust project dashboard provides visual tools like Gantt charts, resource profile plots, and more, offering teams clear insights into project progress and resource usage at a glance. Together, these features make Elmiasangga Agna Resource Planner a powerful tool for managing projects with efficiency and accuracy.
+Elmiasangga Agna Resource Planner (EARP) offers a comprehensive suite of functionalities designed to streamline project management and optimize resource utilization. It supports complex task dependencies, including start-start, start-finish, finish-finish, and finish-start relationships, complete with lead and lag adjustments to ensure flexibility and precision in scheduling. The planner incorporates automatic scheduling that considers resource constraints, enabling seamless task allocation and timeline optimization. Additionally, its robust project dashboard provides visual tools like Gantt charts, resource profile plots, and more, offering teams clear insights into project progress and resource usage at a glance. Together, these features make EARP a powerful tool for managing projects with efficiency and accuracy. With EARP, one can:
 
-# Click on the role you're granted. If you're the one who sign up, you're an administrator.
+- [insert project](#Insert Project)
+- [users management](#Users Management)
 
-- [Administrator](#admin)
-- [Leader](#leader)
-- [Member](#member)
-- [Guest](#guest)
+Users who sign up for an EARP account will be granted an administrator account. Only one person is required to register an organization. The administrator can then add additional members to the organization with various roles, including the administrator role. Each user can hold only one role at a time. The currently available roles in EARP are as follows:
 
-# admin
+- administrator
+- leader
+- member
+- guest
 
-# leader
+# Administrator
 
-# member
+An administrator is vital to the organization, responsible for tasks such as adding and removing users, as well as managing subscriptions. Upon user signup, the organization benefits from an unlimited number of free trial subscriptions available for a defined period, which can be allocated as necessary. Furthermore, administrators possess the authority to create projects, access any project dashboard and workspace, assign project leaders, and appoint guests to various projects.
 
-# guest
+# Leader
+
+In the project workspace, leaders hold a crucial role in task management. They can assign tasks to multiple team members, ensuring that at least one of the assignees possesses the leader role, which allows for effective oversight and accountability. Each task can include relevant links that are visible to all project participants, fostering transparency and collaboration.
+
+Moreover, leaders have the authority to review each task within the workspace, enabling them to monitor progress and provide feedback. A dedicated project dashboard is available, offering a comprehensive view of the project's schedule and resource allocation. This functionality equips leaders with the ability to manage and track their team's activities efficiently, allowing them to make informed decisions based on real-time updates and data. Overall, this setup promotes effective leadership and enhances the overall project management process.
+
+# Member
+
+Members can collaborate on tasks related to their assigned projects. If a member is designated as the leader for a specific task, they will have exclusive permissions to update the task status. This ensures clear accountability and streamlined progress tracking.
+
+# Guest
+
+Guests can access the project workspace and the dashboards for the projects they are assigned to. This allows them to collaborate effectively and stay updated on progress, tasks, and any critical information relevant to their role in the project.
