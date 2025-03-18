@@ -36,7 +36,7 @@ Guests can access the project workspace and the dashboards for the projects they
 
 ## Insert Project
 
-Only [administrators](###administrator) can insert projects. To insert a project, the following information is required:
+Only [administrators](#administrator) can insert projects. To insert a project, the following information is required:
 
 - **Weekends**
 - **Project Details:**
@@ -74,3 +74,11 @@ Only [administrators](###administrator) can insert projects. To insert a project
   - Name of the column containing the maximal lag in days (must be present in the CSV file, can be empty).
   - Name of the column containing the type of dependency (SS, SF, FS, FF) for maximal lag (must be present in the CSV file, can be empty).
   - CSV file containing information on dependencies between tasks with the specified column headers.
+
+## Manage Users
+
+Only [administrators](#administrator) can manage users. To insert users, the following information is required:
+
+- Name of the column containing the email of the user to be added.
+- Name of the column containing the role (admin, leader, member, guest) of the user to be added.
+- A CSV file containing information on users to be added with the specified column headers.
