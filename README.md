@@ -102,4 +102,8 @@ To assign subscriptions, an administrator needs to enter the following informati
 
 ## Project Dashboard
 
-The project dashboard is accessible to [administrator](#administrator), [leader](#leader), and [guest](#guest) users who have either the ProjectManagementSystem 30-days Plan, ProjectManagementSystem 365-days Plan, or the Trial Plan. The [administrator](#administrator) has the ability to assign a leader and guests to a project directly from the project dashboard.
+The project dashboard is available to users with the roles of [administrator](#administrator), [leader](#leader), and [guest], provided they are on one of the following plans: ProjectManagementSystem 30-days Plan, ProjectManagementSystem 365-days Plan, or the Trial Plan. Users can view schedules and resource profiles for various projects to which they have access. The [administrator](#administrator) has the capability to directly assign leaders and guests to projects through the project dashboard.
+
+## Project Workspace
+
+The project workspace is accessible to users in any role as long as they are subscribed to one of the following plans: ProjectManagementSystem 30-days Plan, ProjectManagementSystem 365-days Plan, or the Trial Plan. Members designated as leaders for a task can update the task, while leaders have the ability to review any task within the projects they are assigned to. Guests and administrators can only monitor project progress, with guests limited to projects they are assigned to, whereas administrators have visibility into all projects.
