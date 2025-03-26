@@ -3,11 +3,11 @@
 Elmiasangga Agna Resource Planner (EARP) offers a comprehensive suite of functionalities designed to streamline project management and optimize resource utilization. It supports complex task dependencies, including start-start, start-finish, finish-finish, and finish-start relationships, complete with lead and lag adjustments to ensure flexibility and precision in scheduling. The planner incorporates automatic scheduling that considers resource constraints, enabling seamless task allocation and timeline optimization. Additionally, its robust project dashboard provides visual tools like Gantt charts, resource profile plots, and more, offering teams clear insights into project progress and resource usage at a glance. Together, these features make EARP a powerful tool for managing projects with efficiency and accuracy. With EARP, one can:
 
 - [insert project](#insert-project)
-- [manage users](#users-management)
-- [manage subscriptions](#subscriptions-management)
+- [manage users](#manage-users)
+- [manage subscriptions](#manage-subscriptions)
 - [access project dashboard](#project-dashboard)
 - [access project workspace](#project-workspace)
-- [manage tasks](#tasks-management)
+- [manage tasks](#manage-tasks)
 
 Users who sign up for an EARP account will be granted an administrator account. Only one person is required to register an organization. The administrator can then add additional members to the organization with various roles, including the administrator role. Each user can hold only one role at a time. The currently available roles in EARP are as follows:
 
