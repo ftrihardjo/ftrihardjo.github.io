@@ -4,51 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1, h2 {
+            color: #444;
+        }
+        h1 {
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        h2 {
+            margin-top: 20px;
+        }
+        p, ul {
+            margin-bottom: 15px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Privacy Policy</h1>
-    <p><strong>Last Updated:</strong> 28/08/2025</p>
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <p><strong>Last Updated:</strong> 28/08/2025</p>
 
-    <h2>1. Information We Collect</h2>
-    <p>
-        Our application, Gantt Management Sheet, accesses and processes the following Google user data:
-    </p>
-    <ul>
-        <li>Google Sheets data (to read/write project schedules).</li>
-        <li>Basic user profile information (name, email) for authentication.</li>
-    </ul>
+        <h2>1. Information We Collect</h2>
+        <p>Our Google Workspace add-on, Gantt Management Sheet, may collect the following types of information:</p>
+        <ul>
+            <li><strong>Task Data:</strong> Information about tasks, including names, dates, durations, dependencies, and progress.</li>
+            <li><strong>User Data:</strong> Basic user information such as email address (if explicitly provided) for assignee tracking.</li>
+            <li><strong>Spreadsheet Data:</strong> Data from the active Google Sheet where the add-on is used, limited to the columns specified for scheduling.</li>
+        </ul>
 
-    <h2>2. How We Use Your Data</h2>
-    <p>
-        We use this data solely to:
-    </p>
-    <ul>
-        <li>Generate and manage Gantt charts within Google Sheets.</li>
-        <li>Provide task scheduling and resource allocation features.</li>
-    </ul>
+        <h2>2. How We Use Your Information</h2>
+        <p>We use the collected data solely for the following purposes:</p>
+        <ul>
+            <li>To generate and display Gantt charts based on your project schedule.</li>
+            <li>To optimize task scheduling using the provided constraints.</li>
+            <li>To improve the functionality and user experience of the add-on.</li>
+        </ul>
 
-    <h2>3. Data Sharing & Disclosure</h2>
-    <p>
-        <strong>We do not share, sell, or transfer Google user data to third parties</strong>, except in the following cases:
-    </p>
-    <ul>
-        <li><strong>Google Cloud Services:</strong> Data is stored and processed securely within Google's infrastructure (Google Sheets API).</li>
-        <li><strong>Legal Compliance:</strong> If required by law (e.g., court orders, government requests).</li>
-    </ul>
+        <h2>3. Data Sharing and Disclosure</h2>
+        <p>We are committed to protecting your privacy and do not share, transfer, or disclose Google user data with third parties except in the following limited circumstances:</p>
+        <ul>
+            <li><strong>Service Providers:</strong> We may use Google Cloud services for hosting and processing data, but all data remains within Google's infrastructure.</li>
+            <li><strong>Legal Compliance:</strong> We may disclose data if required by law or in response to valid legal requests (e.g., court orders).</li>
+            <li><strong>User Consent:</strong> Data may be shared with other users within the same organization if explicitly configured in the add-on's settings.</li>
+        </ul>
+        <p><strong>No Selling of Data:</strong> We do not sell, rent, or trade your data with advertisers or other third parties.</p>
 
-    <h2>4. Data Security</h2>
-    <p>
-        We implement industry-standard security measures to protect your data, including encryption and access controls.
-    </p>
+        <h2>4. Data Storage and Security</h2>
+        <p>All data processed by this add-on is stored securely in Google's infrastructure:</p>
+        <ul>
+            <li>Task data is temporarily stored in Google Apps Script's <code>PropertiesService</code> (User Properties) during the scheduling process.</li>
+            <li>No data is stored on external servers or databases outside of Google Workspace.</li>
+            <li>We implement Google's security best practices to protect your data.</li>
+        </ul>
 
-    <h2>5. Changes to This Policy</h2>
-    <p>
-        We may update this policy periodically. The latest version will always be posted here.
-    </p>
+        <h2>5. User Control and Access</h2>
+        <p>You retain full control over your data:</p>
+        <ul>
+            <li>All data remains in your Google Sheet unless explicitly processed by the add-on.</li>
+            <li>You can revoke the add-on's access at any time via Google Account permissions.</li>
+            <li>No permanent copies of your data are retained after the add-on completes its operations.</li>
+        </ul>
 
-    <h2>6. Contact Us</h2>
-    <p>
-        For questions about this policy, contact us at: felixtrihardjo@gmail.com.
-    </p>
+        <h2>6. Changes to This Privacy Policy</h2>
+        <p>We may update this policy periodically. The "Last Updated" date at the top will reflect changes. Continued use of the add-on constitutes acceptance of the updated policy.</p>
+
+        <h2>7. Contact Us</h2>
+        <p>For questions about this privacy policy or data practices, please contact us at:</p>
+        <p>
+            felixtrihardjo@gmail.com<br>
+        </p>
+    </div>
 </body>
 </html>
