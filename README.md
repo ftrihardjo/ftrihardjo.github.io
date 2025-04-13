@@ -66,6 +66,9 @@ Only [administrators](#administrator) with either the Project Management System 
   - Name of the column containing the unavailable resource name.
   - Name of the column containing the unavailable resource quantity.
   - CSV file containing information on resource unavailability with the specified column headers.
+ 
+Note: If certain days are holidays, set the quantity to "Infinity".
+  
 - **Task Dependency Details:**
   - Name of the column containing the predecessor task's name.
   - Name of the column containing the successor task's name.
