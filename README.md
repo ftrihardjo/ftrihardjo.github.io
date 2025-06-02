@@ -7,4 +7,4 @@ There are two roles in EARP: administrator and non-administrator. Administrators
 ## Services
 
 The following services are available in EARP:
-- **project**: project management
+- **project**: service for project scheduling and task assignments
