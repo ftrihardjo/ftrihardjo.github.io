@@ -1,4 +1,4 @@
-# ![[EARP](https://elmiasangga-agna.com/), a simulator for complex problem](EARP.jpg)
+# [EARP](https://elmiasangga-agna.com/), a simulator for complex problem
 
 ## Roles
 
