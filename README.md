@@ -68,7 +68,7 @@ A CSV file containing the holidays. The file should contain the columns:
 - **end**: the period in which the holiday will be starting from, exclusive of **end**
 
 ## Weekends
-The list of weekends for long project.
+The list of weekend days for long project.
 
 ## Breaks
 The list of the break hours for short project.
