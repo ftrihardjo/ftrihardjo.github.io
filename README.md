@@ -77,3 +77,7 @@ The list of the break hours for short project.
 ## Budget
 
 Budget is the capital available for crashing the project.
+
+## Project Type
+
+The duration of long project is in days, while for short project it is in hours.
