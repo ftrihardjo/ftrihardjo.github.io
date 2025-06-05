@@ -31,12 +31,12 @@ A CSV file containing the tasks of the project. The file should contain the colu
 - **name**: the name of the task
 - **duration**: the task duration as an integer in either days for a long project or hours for a short project
 - **priority**: the task priority as an integer with the smaller number representing the higher priority
-- **ready_start**: the earliest time that the task can start, in simplified ISO 8601, YYYY-MM-DD HH:MM:SS (e.g., 2025-06-01 00:00:00)
-- **ready_end**: the earliest time that the task can inclusively end, in simplified ISO 8601, YYYY-MM-DD HH:MM:SS (e.g., 2025-06-01 00:00:00)
-- **due_start**: the latest time that the task can inclusively start, in simplified ISO 8601, YYYY-MM-DD HH:MM:SS (e.g., 2025-06-01 00:00:00)
-- **due_end**: the latest time that the task can inclusively end, in simplified ISO 8601, YYYY-MM-DD HH:MM:SS (e.g., 2025-06-01 00:00:00)
-- **minimum_duration**: the minimum duration as an integer in either days for a long project or hours for a short project
-- **crashing costs**: the costs, separated by a space, for crashing the task per unit time (day for long project, and hour for short project), i.e. the first element is the cost for crashing the task by one day or hour, the secibd element is the cost for crashing the task by another one day or hour, etc.
+- **ready_start**: the earliest time that the task can start, in simplified ISO 8601, YYYY-MM-DD HH:MM:SS (e.g., 2025-06-01 00:00:00), leave every row corresponding to the task that doesn't have it empty
+- **ready_end**: the earliest time that the task can inclusively end, in simplified ISO 8601, YYYY-MM-DD HH:MM:SS (e.g., 2025-06-01 00:00:00), leave every row corresponding to the task that doesn't have it empty
+- **due_start**: the latest time that the task can inclusively start, in simplified ISO 8601, YYYY-MM-DD HH:MM:SS (e.g., 2025-06-01 00:00:00), leave every row corresponding to the task that doesn't have it empty
+- **due_end**: the latest time that the task can inclusively end, in simplified ISO 8601, YYYY-MM-DD HH:MM:SS (e.g., 2025-06-01 00:00:00), leave every row corresponding to the task that doesn't have it empty
+- **minimum_duration**: the minimum duration as an integer in either days for a long project or hours for a short project, only needed for project crashing
+- **crashing costs**: the costs, separated by a space, for crashing the task per unit time (day for long project, and hour for short project), i.e. the first element is the cost for crashing the task by one day or hour, the secibd element is the cost for crashing the task by another one day or hour, etc., only needed for project crashing
 
 ## Project Dependencies
 A CSV file containing the dependencies of the project. The file should contain the columns:
