@@ -36,6 +36,7 @@ A CSV file containing the tasks of the project. The file should contain the colu
 - **due_start**: the latest time that the task can inclusively start, in simplified ISO 8601, YYYY-MM-DD HH:MM:SS (e.g., 2025-06-01 00:00:00)
 - **due_end**: the latest time that the task can inclusively end, in simplified ISO 8601, YYYY-MM-DD HH:MM:SS (e.g., 2025-06-01 00:00:00)
 - **minimum_duration**: the minimum duration as an integer in either days for a long project or hours for a short project
+- **crashing costs**: the costs, separated by a space, for crashing the task per unit time (day for long project, and hour for short project), i.e. the first element is the cost for crashing the task by one day or hour, the secibd element is the cost for crashing the task by another one day or hour, etc.
 
 ## Project Dependencies
 A CSV file containing the dependencies of the project. The file should contain the columns:
@@ -73,3 +74,7 @@ The list of weekend days for long project.
 
 ## Breaks
 The list of the break hours for short project.
+
+## Budget
+
+Budget is the capital available for crashing the project.
