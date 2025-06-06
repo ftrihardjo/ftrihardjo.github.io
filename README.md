@@ -35,7 +35,7 @@ A CSV file containing the tasks of the project. The file should contain the colu
 - **ready_end**: the earliest time that the task can inclusively end, in simplified ISO 8601, YYYY-MM-DD HH:MM:SS (e.g., 2025-06-01 00:00:00), leave every row corresponding to the task that doesn't have it empty
 - **due_start**: the latest time that the task can inclusively start, in simplified ISO 8601, YYYY-MM-DD HH:MM:SS (e.g., 2025-06-01 00:00:00), leave every row corresponding to the task that doesn't have it empty
 - **due_end**: the latest time that the task can inclusively end, in simplified ISO 8601, YYYY-MM-DD HH:MM:SS (e.g., 2025-06-01 00:00:00), leave every row corresponding to the task that doesn't have it empty
-- **crashing costs**: the costs, separated by a space, for crashing the task per unit time (day for long project, and hour for short project), i.e. the first element is the cost for crashing the task by one day or hour, the secibd element is the cost for crashing the task by another one day or hour, etc., only needed for project crashing
+- **crashing costs**: the costs, separated by a semicolon, for crashing the task per unit time (day for long project, and hour for short project), i.e. the first element is the cost for crashing the task by one day or hour, the second element is the cost for crashing the task by another one day or hour, etc., all encapsulated by double quotes, only needed for project crashing, for example "1500;1200;900"
 
 ## Project Dependencies
 A CSV file containing the dependencies of the project. The file should contain the columns:
