@@ -4,14 +4,10 @@
 
 There are two roles in EARP: administrator and non-administrator. Administrators can add a user, edit a user's access to services, roles, and time limit per run, as well as remove a user within your organization.
 
-## Time Limit
-
-The time limit is the maximum amount of time, in **seconds**, that you want the user to be allowed to run any service. By default, everyone's time limit is zero. **Beware that your organization will be charged per second for every run.**
-
 ## Services
 
 The services assigned to the user need to be entered in the text, each separated by a comma. The following services are available in EARP:
-- **project**: project-related services such as project scheduling, crashing, visualization, and task assignments
+- **project**: project-related services such as project scheduling, crashing, visualization, and task assignments, where **the credits consumed will be equal to the number of tasks in the project**
 
 ## Project Name
 
@@ -25,7 +21,7 @@ The start of your project, in simplified ISO 8601, YYYY-MM-DD HH:MM:SS (e.g., 20
 
 The end of your project, in simplified ISO 8601, YYYY-MM-DD HH:MM:SS (e.g., 2025-06-01 00:00:00).
 
-## Project Tasks
+## Project Tasks for Project Scheduling
 
 A CSV file containing the tasks of the project. The file should contain the columns:
 - **name**: the name of the task
@@ -35,7 +31,6 @@ A CSV file containing the tasks of the project. The file should contain the colu
 - **ready_end**: the earliest time that the task can inclusively end, in simplified ISO 8601, YYYY-MM-DD HH:MM:SS (e.g., 2025-06-01 00:00:00), leave every row corresponding to the task that doesn't have it empty
 - **due_start**: the latest time that the task can inclusively start, in simplified ISO 8601, YYYY-MM-DD HH:MM:SS (e.g., 2025-06-01 00:00:00), leave every row corresponding to the task that doesn't have it empty
 - **due_end**: the latest time that the task can inclusively end, in simplified ISO 8601, YYYY-MM-DD HH:MM:SS (e.g., 2025-06-01 00:00:00), leave every row corresponding to the task that doesn't have it empty
-- **crashing costs**: the costs, separated by a semicolon, for crashing the task per unit time (day for long project, and hour for short project), i.e. the first element is the cost for crashing the task by one day or hour, the second element is the cost for crashing the task by another one day or hour, etc., all encapsulated by double quotes, only needed for project crashing, for example "1500;1200;900"
 
 ## Project Dependencies
 A CSV file containing the dependencies of the project. The file should contain the columns:
@@ -81,3 +76,15 @@ Budget is the capital available for crashing the project.
 ## Project Type
 
 The duration of long project is in days, while for short project it is in hours.
+
+## Project Tasks for Project Crashing
+
+A CSV file containing the tasks of the project. The file should contain the columns:
+- **name**: the name of the task
+- **duration**: the task duration as an integer in either days for a long project or hours for a short project
+- **priority**: the task priority as an integer with the smaller number representing the higher priority
+- **ready_start**: the earliest time that the task can start, in simplified ISO 8601, YYYY-MM-DD HH:MM:SS (e.g., 2025-06-01 00:00:00), leave every row corresponding to the task that doesn't have it empty
+- **ready_end**: the earliest time that the task can inclusively end, in simplified ISO 8601, YYYY-MM-DD HH:MM:SS (e.g., 2025-06-01 00:00:00), leave every row corresponding to the task that doesn't have it empty
+- **due_start**: the latest time that the task can inclusively start, in simplified ISO 8601, YYYY-MM-DD HH:MM:SS (e.g., 2025-06-01 00:00:00), leave every row corresponding to the task that doesn't have it empty
+- **due_end**: the latest time that the task can inclusively end, in simplified ISO 8601, YYYY-MM-DD HH:MM:SS (e.g., 2025-06-01 00:00:00), leave every row corresponding to the task that doesn't have it empty
+- **crashing costs**: the costs, separated by a semicolon, for crashing the task per unit time (day for long project, and hour for short project), i.e. the first element is the cost for crashing the task by one day or hour, the second element is the cost for crashing the task by another one day or hour, etc., all encapsulated by double quotes, for example "1500;1200;900"
