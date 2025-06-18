@@ -91,5 +91,4 @@ A CSV file containing the tasks of the project. The file should contain the colu
 
 A CSV file containing the tasks of the project. The file should contain the columns:
 - task: the name of the task
-- time: the time in which the project will be crashed, in simplified ISO 8601, YYYY-MM-DD HH:MM:SS (e.g., 2025-06-01 00:00:00)
 - cost: the cost for crashing the project for one day (for long project) or one hour (for short project), with the first entry being the cost of crashing the task for the first time, the second entry being the cost of crashing the task for the second time, etc.
