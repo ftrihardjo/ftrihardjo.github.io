@@ -25,17 +25,17 @@ The end of your project, in simplified ISO 8601, YYYY-MM-DD HH:MM:SS (e.g., 2025
 
 A CSV file containing the tasks of the project. The file should contain the columns:
 - name: the name of the task
-- duration: the task duration as an integer in either days for a long project or hours for a short project
+- duration: the task duration, either in days or hours
 - priority: the task priority as an integer with the smaller number representing the higher priority
-- ready_start: the earliest time that the task can start, in simplified ISO 8601, YYYY-MM-DD HH:MM:SS (e.g., 2025-06-01 00:00:00), leave every row corresponding to the task that doesn't have it empty
-- ready_end: the earliest time that the task can inclusively end, in simplified ISO 8601, YYYY-MM-DD HH:MM:SS (e.g., 2025-06-01 00:00:00), leave every row corresponding to the task that doesn't have it empty
-- due_start: the latest time that the task can inclusively start, in simplified ISO 8601, YYYY-MM-DD HH:MM:SS (e.g., 2025-06-01 00:00:00), leave every row corresponding to the task that doesn't have it empty
-- due_end: the latest time that the task can inclusively end, in simplified ISO 8601, YYYY-MM-DD HH:MM:SS (e.g., 2025-06-01 00:00:00), leave every row corresponding to the task that doesn't have it empty
+- ready_start: the earliest time that the task can start, in simplified ISO 8601, YYYY-MM-DD HH:MM:SS (e.g., 2025-06-01 00:00:00), leave every cell corresponding to the task that doesn't have it empty
+- ready_end: the earliest time that the task can inclusively end, in simplified ISO 8601, YYYY-MM-DD HH:MM:SS (e.g., 2025-06-01 00:00:00), leave every cell corresponding to the task that doesn't have it empty
+- due_start: the latest time that the task can inclusively start, in simplified ISO 8601, YYYY-MM-DD HH:MM:SS (e.g., 2025-06-01 00:00:00), leave every cell corresponding to the task that doesn't have it empty
+- due_end: the latest time that the task can inclusively end, in simplified ISO 8601, YYYY-MM-DD HH:MM:SS (e.g., 2025-06-01 00:00:00), leave every cell corresponding to the task that doesn't have it empty
 
 ## Project Dependencies
 A CSV file containing the dependencies of the project. The file should contain the columns:
 - activity: the name of the task
-- predecessor: the predecessor task of the task
+- predecessor: the predecessor task of the activity
 - relationship: the relationship between the activity and its predecessor (Finish-to-Start (FS), Start-to-Start (SS), Start-to-Finish (SF), Finish-to-Finish (FF))
 - is_minimum_lag: True (the activity needs to lag by at least the amount given by the lag column) or False (the activity needs to lag by at most the amount given by the lag column)
 - lag: the amount of lag as an integer given either in days for a long project or hours for a short project, negative lag is lead
@@ -60,8 +60,8 @@ A CSV file containing the periods in which resources become unavailable. The fil
 
 ## Holidays
 A CSV file containing the holidays. The file should contain the columns:
-- start: the period in which the holiday will be starting from, inclusive of start
-- end: the period in which the holiday will be starting from, exclusive of end
+- start: the period in which the holiday will be starting from, inclusive of the start
+- end: the period in which the holiday will be starting from, exclusive of the end
 
 ## Weekends
 The list of weekend days for long project.
@@ -82,14 +82,14 @@ The duration of long project is in days, while for short project it is in hours.
 A CSV file containing the tasks of the project. The file should contain the columns:
 - name: the name of the task
 - duration: the task duration as an integer in either days for a long project or hours for a short project
-- ready_start: the earliest time that the task can start, in simplified ISO 8601, YYYY-MM-DD HH:MM:SS (e.g., 2025-06-01 00:00:00), leave every row corresponding to the task that doesn't have it empty
-- ready_end: the earliest time that the task can inclusively end, in simplified ISO 8601, YYYY-MM-DD HH:MM:SS (e.g., 2025-06-01 00:00:00), leave every row corresponding to the task that doesn't have it empty
-- due_start: the latest time that the task can inclusively start, in simplified ISO 8601, YYYY-MM-DD HH:MM:SS (e.g., 2025-06-01 00:00:00), leave every row corresponding to the task that doesn't have it empty
-- due_end: the latest time that the task can inclusively end, in simplified ISO 8601, YYYY-MM-DD HH:MM:SS (e.g., 2025-06-01 00:00:00), leave every row corresponding to the task that doesn't have it empty
+- ready_start: the earliest time that the task can start, in simplified ISO 8601, YYYY-MM-DD HH:MM:SS (e.g., 2025-06-01 00:00:00), leave every cell corresponding to the task that doesn't have it empty
+- ready_end: the earliest time that the task can inclusively end, in simplified ISO 8601, YYYY-MM-DD HH:MM:SS (e.g., 2025-06-01 00:00:00), leave every cell corresponding to the task that doesn't have it empty
+- due_start: the latest time that the task can inclusively start, in simplified ISO 8601, YYYY-MM-DD HH:MM:SS (e.g., 2025-06-01 00:00:00), leave every cell corresponding to the task that doesn't have it empty
+- due_end: the latest time that the task can inclusively end, in simplified ISO 8601, YYYY-MM-DD HH:MM:SS (e.g., 2025-06-01 00:00:00), leave every cell corresponding to the task that doesn't have it empty
 
 ## Project Crashing Costs
 
 A CSV file containing the tasks of the project. The file should contain the columns:
 - task: the name of the task
 - time: the time in which the project will be crashed, in simplified ISO 8601, YYYY-MM-DD HH:MM:SS (e.g., 2025-06-01 00:00:00)
-- cost: the cost for crashing the project for one day (for long project) or one hour (for short project)
+- cost: the cost for crashing the project for one day (for long project) or one hour (for short project), with the first entry being the cost of crashing the task for the first time, the second entry being the cost of crashing the task for the second time, etc.
