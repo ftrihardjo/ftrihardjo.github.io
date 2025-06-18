@@ -7,7 +7,7 @@ There are two roles in EARP: administrator and non-administrator. Administrators
 ## Services
 
 The services assigned to the user need to be entered in the text, each separated by a comma. The following services are available in EARP:
-- project: project-related services such as project scheduling, crashing, visualization, and task assignments, where **the credits consumed will be equal to the number of tasks in the project**
+- project: project-related services such as project scheduling, crashing, visualization, and task assignments, where **the credits consumed will be equal to the number of tasks in the project**. Its API documentation is at https://documenter.getpostman.com/view/15994165/2sB2x9iALW.
 
 ## Project Name
 
