@@ -15,11 +15,11 @@ The name of your project. Once your project is scheduled, you'll be given an ID 
 
 ## Project Start
 
-The start of your project, in simplified ISO 8601, YYYY-MM-DD HH:MM:SS (e.g., 2025-06-01 00:00:00).
+The start time of your project, in simplified ISO 8601, YYYY-MM-DD HH:MM:SS (e.g., 2025-06-01 00:00:00).
 
 ## Project End
 
-The end of your project, in simplified ISO 8601, YYYY-MM-DD HH:MM:SS (e.g., 2025-06-01 00:00:00).
+The desired end time of your project, in simplified ISO 8601, YYYY-MM-DD HH:MM:SS (e.g., 2025-06-01 00:00:00).
 
 ## Project Tasks for Project Scheduling
 
@@ -92,3 +92,23 @@ A CSV file containing the tasks of the project. The file should contain the colu
 A CSV file containing the tasks of the project. The file should contain the columns:
 - task: the name of the task
 - cost: the cost for crashing the project for one day (for long project) or one hour (for short project), with the first entry being the cost of crashing the task for the first time, the second entry being the cost of crashing the task for the second time, etc.
+
+## Requirements for Task Assignment
+
+A CSV file containing the skill requirements for each task of the project. The file should contain the columns:
+- task: the name of the task
+- skill: the skill required for the task
+- quantity: the number of people with the skill that are required by the task
+
+## Project Tasks for Task Assignment
+
+A CSV file containing the tasks of the project. The file should contain the columns:
+- name: the name of the task
+- start: the start time of the task
+- end: the end time of the task
+
+## Assignees
+
+A CSV file containing the assignees for the project. The file should contain the columns:
+- name: the name of the person working on the project
+- skill: the skill that the person has
