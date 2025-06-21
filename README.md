@@ -112,3 +112,15 @@ A CSV file containing the tasks of the project. The file should contain the colu
 A CSV file containing the assignees for the project. The file should contain the columns:
 - name: the name of the person working on the project
 - skill: the skill that the person has
+
+## Baseline Schedule
+A CSV file containing the baseline schedule for the project. The file should contain the columns:
+- task: the name of the task
+- planned_start: the planned start time of the task
+- planned_end: the planned end time of the task
+
+## Actual Schedule
+A CSV file containing the baseline schedule for the project. The file should contain the columns:
+- task: the name of the task
+- actual_start: the actual start time of the task
+- actual_end: the actual end time of the task
