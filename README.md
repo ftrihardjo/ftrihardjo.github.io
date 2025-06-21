@@ -120,7 +120,7 @@ A CSV file containing the baseline schedule for the project. The file should con
 - planned_end: the planned end time of the task
 
 ## Actual Schedule
-A CSV file containing the baseline schedule for the project. The file should contain the columns:
+A CSV file containing the actual schedule for the project. The file should contain the columns:
 - task: the name of the task
 - actual_start: the actual start time of the task
 - actual_end: the actual end time of the task
