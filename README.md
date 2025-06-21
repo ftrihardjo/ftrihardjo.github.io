@@ -1,6 +1,6 @@
-# [EARP](https://elmiasangga-agna.com/), a simulator for complex problem
+# [EARP](https://elmiasangga-agna.com/) documentation
 
-Input files can be found [here](https://drive.google.com/drive/folders/1NthfB-66HHHrbS-ckzPT6WI5jEtpehn9?usp=sharing).
+When you sign up for the first time, you'll receive an admin role that enables you to add or remove users. Initially, you won’t have access to any services. To assign a service to yourself, simply click the "Add or Edit User" link, enter your email address, and list the services (currently, this is just the project service) separated by commas. You can find example input files for each functionality [here](https://drive.google.com/drive/folders/1NthfB-66HHHrbS-ckzPT6WI5jEtpehn9?usp=sharing).
 
 ## Roles
 
@@ -9,7 +9,7 @@ There are two roles in EARP: administrator and non-administrator. Administrators
 ## Services
 
 The services assigned to the user need to be entered in the text, each separated by a comma. The following services are available in EARP:
-- project: project-related services such as project scheduling, crashing, visualization, and task assignments, where **the credits consumed will be equal to the number of tasks in the project**. Its API documentation is at https://documenter.getpostman.com/view/15994165/2sB2x9iALW.
+- project: project-related services such as project scheduling, crashing, visualization, and task assignments, where **the credits consumed will be equal to the number of tasks in the project**. Its API documentation is [here](https://documenter.getpostman.com/view/15994165/2sB2x9iALW).
 
 ## Project Name
 
