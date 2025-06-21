@@ -1,5 +1,7 @@
 # [EARP](https://elmiasangga-agna.com/), a simulator for complex problem
 
+Input files can be found at https://github.com/ftrihardjo/EARP.
+
 ## Roles
 
 There are two roles in EARP: administrator and non-administrator. Administrators can add a user, edit a user's access to services, roles, and time limit per run, as well as remove a user within your organization.
