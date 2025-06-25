@@ -1,10 +1,10 @@
 # [EARP](https://elmiasangga-agna.com/) documentation
 
-When you sign up for the first time, you'll receive an admin role that enables you to add or remove users. Initially, you won’t have access to any services. To assign a service to yourself, simply click the "Add or Edit User" link, enter your email address, and list the services (currently, this is just the project service) separated by commas. You can find example input files for each functionality [here](https://drive.google.com/drive/folders/1NthfB-66HHHrbS-ckzPT6WI5jEtpehn9?usp=sharing).
+Example input files for each functionality [here](https://drive.google.com/drive/folders/1NthfB-66HHHrbS-ckzPT6WI5jEtpehn9?usp=sharing).
 
 ## Roles
 
-There are two roles in EARP: administrator and non-administrator. Administrators can add a user, edit a user's access to services, roles, and time limit per run, as well as remove a user within your organization.
+There are two roles in EARP: administrator and non-administrator. Administrators can add a user, edit a user's access to services, roles, and time limit per run, as well as remove a user within your organization. They also have access to all services.
 
 ## Services
 
