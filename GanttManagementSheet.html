@@ -1,23 +1,286 @@
-<h1>GanttManagementSheet - Project and Task Planning</h1>
-<h1 style="color:red;">For a scheduling app with better performance, you can check <strong><a href="https://elmiasangga-agna.com" target="_blank">EARP</a></strong>.</h1>
-<p>The owner of the spreadsheet will have access to two add-on menus, <strong>Gantt Chart Settings</strong> and <strong>Gantt Chart Plot</strong>.
-Collaborators only have acess to <strong>Gantt Chart Plot</strong>, while people who are neither the spreadsheet owner nor its collaborator will not be able to use the add-on.</p>
-<h2>Gantt Chart Settings</h2>
-<p>A form will appear on the sidebar containing the following items:
-<ul>
-  <li>Task Name (required): the header corresponding to the column which contains unique task names.</li>
-  <li>Commencement (required): project commencement date.</li>
-  <li>Deadline (required): project deadline date.</li>
-  <li>Dependencies: the header of the column that lists the dependencies of each task, with each dependency separated by a comma.</li>
-  <li>Progress: the header of the column that contains the progress percentage of each task.</li>
-  <li>Assignees: the header of the column that contains the assignees of each task.</li>
-  <li>Task Release Date: the header of the column that contains the release date of each task in Google Sheets date format.</li>
-  <li>Task Due Date: the header of the column that contains the due date of each task in Google Sheets date format.</li>
-  <li>Duration: the header of the column that contains the duration of each task in days.</li>
-</ul>
-</p>
-<h2>Gantt Chart Plot</h2>
-<p>A new tab will be opened which will display the Gantt chart corresponding to the schedule if such a schedule exists.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GanttManagementSheet Summary</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.7;
+      margin: 0;
+      padding: 0;
+      background: #f5f7fb;
+      color: #222;
+    }
+
+    header {
+      background: #1a73e8;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 42px;
+    }
+
+    header p {
+      margin-top: 15px;
+      font-size: 18px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 50px 20px;
+    }
+
+    h2 {
+      color: #1a73e8;
+      margin-bottom: 20px;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+
+    .workflow {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .step {
+      flex: 1;
+      min-width: 250px;
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    footer {
+      background: #111827;
+      color: white;
+      text-align: center;
+      padding: 30px;
+      margin-top: 40px;
+    }
+
+    .cta {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 24px;
+      background: #1a73e8;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #e8f0fe;
+      color: #1a73e8;
+      padding: 8px 14px;
+      border-radius: 999px;
+      margin: 5px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>GanttManagementSheet</h1>
+
+  <p>
+    A Google Sheets project management add-on designed for
+    task scheduling, Gantt chart visualization, workload management,
+    Kanban tracking, and project reporting directly inside Google Sheets.
+  </p>
+
+  <div>
+    <span class="badge">Google Sheets</span>
+    <span class="badge">Apps Script</span>
+    <span class="badge">Project Management</span>
+    <span class="badge">Kanban</span>
+    <span class="badge">Gantt Chart</span>
+  </div>
+</header>
+
+<section>
+  <h2>Overview</h2>
+
+  <p>
+    GanttManagementSheet is a Google Workspace add-on built using
+    Google Apps Script to help teams manage projects without leaving
+    Google Sheets. It combines scheduling automation, Kanban boards,
+    Gantt charts, reporting tools, and workload analysis into a single
+    spreadsheet-based system.
+  </p>
+</section>
+
+<section>
+  <h2>Main Features</h2>
+
+  <div class="features">
+
+    <div class="card">
+      <h3>Automatic Scheduling</h3>
+      <p>
+        Generate task schedules automatically using dependencies,
+        start dates, durations, and priorities.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Gantt Chart View</h3>
+      <p>
+        Visualize project timelines and progress directly inside
+        Google Sheets.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Kanban Board</h3>
+      <p>
+        Organize tasks into workflow stages for easier team tracking.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Workload Analysis</h3>
+      <p>
+        Monitor team capacity and balance assignments efficiently.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Performance Reporting</h3>
+      <p>
+        Generate reports to evaluate project execution and productivity.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Google Workspace Integration</h3>
+      <p>
+        Works directly inside Google Sheets using Google Apps Script
+        and Workspace APIs.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <h2>How It Works</h2>
+
+  <div class="workflow">
+
+    <div class="step">
+      <h3>1. Create Projects</h3>
+      <p>
+        Add projects, milestones, and tasks inside Google Sheets.
+      </p>
+    </div>
+
+    <div class="step">
+      <h3>2. Schedule Automatically</h3>
+      <p>
+        Generate schedules and dependencies automatically using built-in logic.
+      </p>
+    </div>
+
+    <div class="step">
+      <h3>3. Track Progress</h3>
+      <p>
+        Monitor tasks using Gantt charts, Kanban boards, and reports.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <h2>Permissions & OAuth Usage</h2>
+
+  <ul>
+    <li>
+      Spreadsheet permissions are used to manage project data,
+      schedules, and reports.
+    </li>
+
+    <li>
+      Google Drive access is used for saving templates and reports.
+    </li>
+
+    <li>
+      User authorization is required for Google Workspace integration.
+    </li>
+
+    <li>
+      Data is processed inside Google Workspace services.
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h2>Technology Stack</h2>
+
+  <ul>
+    <li>Google Apps Script</li>
+    <li>Google Sheets API</li>
+    <li>HTML / CSS / JavaScript</li>
+    <li>Google Workspace Add-on Framework</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Why Use GanttManagementSheet?</h2>
+
+  <p>
+    Many teams already collaborate using Google Sheets but still rely
+    on external project management tools. GanttManagementSheet brings
+    scheduling, visualization, and reporting directly into the
+    spreadsheet workflow, reducing complexity and improving collaboration.
+  </p>
+
+  <div class="cta">
+    <a class="btn" href="https://script.google.com/d/1VYfwfAwChbVPrKIOUnj3eUTsZjOQFUir16KwmqpCo0WKbfoFreNbgqPD/edit?usp=sharing">
+      Open Apps Script Project
+    </a>
+  </div>
+</section>
+
 <footer>
   <a href="https://ftrihardjo.github.io/privacy.html">Privacy Policy</a>
 </footer>
+
+</body>
+</html>
