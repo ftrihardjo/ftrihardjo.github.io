@@ -39,9 +39,16 @@ class ApiClient {
     return response.json();
   }
 
-  // Auth
+  // Auth - Redirect directly to GitHub!
   getGitHubAuthUrl() {
-    return `${API_BASE}/auth/github`;
+    // IMPORTANT: Replace with your GitHub OAuth App's Client ID
+    const clientId = 'Iv23liUFEZYT2ZQkdgcu';
+
+    // The callback must point to the backend function
+    const redirectUri = `${API_BASE}/auth/callback`;
+    const scope = 'read:user,user:email';
+
+    return `https://github.com/login/oauth/authorize?client_id=${clientId}&redirect_uri=${encodeURIComponent(redirectUri)}&scope=${encodeURIComponent(scope)}`;
   }
 
   async getMe() {
