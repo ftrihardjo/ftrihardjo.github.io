@@ -1,4 +1,4 @@
-const API_BASE = 'https://urchin-app-plhcg.ondigitalocean.app/api';
+const API_BASE = 'https://faas-nyc1-2ef2e6cc.doserverless.co/api/v1/web/fn-e6f6298f-438d-4b62-8a67-95172ce09da9/api';
 
 class ApiClient {
   constructor() {
