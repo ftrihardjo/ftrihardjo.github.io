@@ -39,16 +39,21 @@ class ApiClient {
     return response.json();
   }
 
-  // Auth - Redirect directly to GitHub!
+  // Redirect directly to GitHub, callback goes to FRONTEND
   getGitHubAuthUrl() {
-    // IMPORTANT: Replace with your GitHub OAuth App's Client ID
-    const clientId = 'Iv23liUFEZYT2ZQkdgcu';
-
-    // The callback must point to the backend function
-    const redirectUri = `${API_BASE}/auth/callback`;
+    const clientId = 'Iv23liUFEZYT2ZQkdgcu'; 
+    const redirectUri = window.location.origin; // e.g., https://ftrihardjo.github.io
     const scope = 'read:user,user:email';
-
+    
     return `https://github.com/login/oauth/authorize?client_id=${clientId}&redirect_uri=${encodeURIComponent(redirectUri)}&scope=${encodeURIComponent(scope)}`;
+  }
+
+  // New method to exchange the code for our JWT
+  async exchangeCode(code) {
+    return this.request('/auth/exchange', {
+      method: 'POST',
+      body: JSON.stringify({ code }),
+    });
   }
 
   async getMe() {

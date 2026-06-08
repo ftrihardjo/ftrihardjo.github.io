@@ -4,20 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Knowledge Manager</title>
-  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 0; background: #f6f8fa; color: #24292f; }
+    .login-page { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; }
+    .btn { padding: 10px 20px; border: none; border-radius: 6px; cursor: pointer; font-size: 16px; font-weight: 600; }
+    .btn-primary { background: #2da44e; color: white; }
+    .btn-primary:hover { background: #2c974b; }
+    #app { display: none; padding: 20px; max-width: 1200px; margin: 0 auto; }
+  </style>
 </head>
 <body>
-  <nav id="navbar">
-    <a href="#/dashboard" class="logo">🧠 Knowledge Manager</a>
-    <div class="nav-links">
-      <a href="#/search">Search</a>
-      <a href="#/knowledge">Knowledge</a>
-      <a href="#/repos">Repos</a>
-      <span id="user-info"></span>
-    </div>
-  </nav>
+  <div id="login-screen" class="login-page">
+    <h1>🧠 Knowledge Manager</h1>
+    <p>Search code and manage knowledge across your GitHub repositories.</p>
+    <button id="github-login" class="btn btn-primary">Sign in with GitHub</button>
+  </div>
 
-  <main id="app"></main>
+  <div id="app">
+    <!-- App content goes here after login -->
+    <h2>Welcome! <button id="logout-btn" class="btn" style="float:right; background:#d0d7de;">Logout</button></h2>
+    <p>You are logged in.</p>
+  </div>
 
   <script type="module" src="js/app.js"></script>
 </body>
