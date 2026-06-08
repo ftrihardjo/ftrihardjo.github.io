@@ -42,7 +42,7 @@ class ApiClient {
   // Step 1: Redirect to GitHub
   getGitHubAuthUrl() {
     const clientId = 'Iv23liUFEZYT2ZQkdgcu'; // Make sure this is correct!
-    const redirectUri = window.location.origin; // e.g., https://asha.works
+    const redirectUri = 'https://asha.works'; // e.g., https://asha.works
     const scope = 'read:user,user:email';
     
     // Save the redirectUri so we can send it to the backend later
