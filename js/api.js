@@ -41,7 +41,7 @@ class ApiClient {
 
   // Step 1: Redirect to GitHub
   getGitHubAuthUrl() {
-    const clientId = 'YOUR_GITHUB_CLIENT_ID'; // Make sure this is correct!
+    const clientId = 'Iv23liUFEZYT2ZQkdgcu'; // Make sure this is correct!
     const redirectUri = window.location.origin; // e.g., https://asha.works
     const scope = 'read:user,user:email';
     
