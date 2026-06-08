@@ -20,7 +20,8 @@ async function init() {
       window.history.replaceState({}, document.title, window.location.pathname);
     } catch (err) {
       console.error('Login failed:', err);
-      alert('Authentication failed. Please try again.');
+      // Show the actual error message from the backend!
+      alert(`Authentication failed: ${err.message}`);
       window.history.replaceState({}, document.title, window.location.pathname);
     }
   }

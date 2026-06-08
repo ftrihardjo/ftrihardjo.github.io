@@ -39,20 +39,29 @@ class ApiClient {
     return response.json();
   }
 
-  // Redirect directly to GitHub, callback goes to FRONTEND
+  // Step 1: Redirect to GitHub
   getGitHubAuthUrl() {
-    const clientId = 'Iv23liUFEZYT2ZQkdgcu'; 
-    const redirectUri = window.location.origin; // e.g., https://ftrihardjo.github.io
+    const clientId = 'YOUR_GITHUB_CLIENT_ID'; // Make sure this is correct!
+    const redirectUri = window.location.origin; // e.g., https://asha.works
     const scope = 'read:user,user:email';
     
+    // Save the redirectUri so we can send it to the backend later
+    sessionStorage.setItem('oauth_redirect_uri', redirectUri);
+
     return `https://github.com/login/oauth/authorize?client_id=${clientId}&redirect_uri=${encodeURIComponent(redirectUri)}&scope=${encodeURIComponent(scope)}`;
   }
 
-  // New method to exchange the code for our JWT
+  // Step 2: Exchange code for JWT
   async exchangeCode(code) {
+    // Retrieve the exact redirectUri used in step 1
+    const redirectUri = sessionStorage.getItem('oauth_redirect_uri') || window.location.origin;
+    
     return this.request('/auth/exchange', {
       method: 'POST',
-      body: JSON.stringify({ code }),
+      body: JSON.stringify({ 
+        code,
+        redirect_uri: redirectUri // Send it to the backend!
+      }),
     });
   }
 
